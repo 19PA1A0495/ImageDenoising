@@ -1,0 +1,276 @@
+#create layergraph   
+lgraph = layerGraph();   
+
+#add layer branches   
+
+tempLayers = [
+    imageInputLayer([50 50 1],"Name","imageinput")
+    convolution2dLayer([3 3],64,"Name","conv_1","Padding","same")
+    reluLayer("Name","relu_1")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_2","Padding","same")
+    reluLayer("Name","relu_2")
+    convolution2dLayer([3 3],64,"Name","conv_3","Padding","same")
+    reluLayer("Name","relu_3")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_1");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_4","Padding","same")
+    reluLayer("Name","relu_4")
+    convolution2dLayer([3 3],64,"Name","conv_5","Padding","same")
+    reluLayer("Name","relu_5")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_2");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_6","Padding","same")
+    reluLayer("Name","relu_6")
+    convolution2dLayer([3 3],64,"Name","conv_7","Padding","same")
+    reluLayer("Name","relu_7")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_3");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_8","Padding","same")
+    reluLayer("Name","relu_8")
+    convolution2dLayer([3 3],64,"Name","conv_9","Padding","same")
+    reluLayer("Name","relu_9")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_4");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_10","Padding","same")
+    reluLayer("Name","relu_10")
+    convolution2dLayer([3 3],64,"Name","conv_11","Padding","same")
+    reluLayer("Name","relu_11")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_5");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_12","Padding","same")
+    reluLayer("Name","relu_12")
+    convolution2dLayer([3 3],64,"Name","conv_13","Padding","same")
+    reluLayer("Name","relu_13")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_6");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_14","Padding","same")
+    reluLayer("Name","relu_14")
+    convolution2dLayer([3 3],64,"Name","conv_15","Padding","same")
+    reluLayer("Name","relu_15")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_7");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_16","Padding","same")
+    reluLayer("Name","relu_16")
+    convolution2dLayer([3 3],64,"Name","conv_17","Padding","same")
+    reluLayer("Name","relu_17")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_8");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_18","Padding","same")
+    reluLayer("Name","relu_18")
+    convolution2dLayer([3 3],64,"Name","conv_19","Padding","same")
+    reluLayer("Name","relu_19")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_9");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_20","Padding","same")
+    reluLayer("Name","relu_20")
+    convolution2dLayer([3 3],64,"Name","conv_21","Padding","same")
+    reluLayer("Name","relu_21")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_10");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_22","Padding","same")
+    reluLayer("Name","relu_22")
+    convolution2dLayer([3 3],64,"Name","conv_23","Padding","same")
+    reluLayer("Name","relu_23")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_11");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_24","Padding","same")
+    reluLayer("Name","relu_24")
+    convolution2dLayer([3 3],64,"Name","conv_25","Padding","same")
+    reluLayer("Name","relu_25")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_12");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_26","Padding","same")
+    reluLayer("Name","relu_26")
+    convolution2dLayer([3 3],64,"Name","conv_27","Padding","same")
+    reluLayer("Name","relu_27")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_13");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_28","Padding","same")
+    reluLayer("Name","relu_28")
+    convolution2dLayer([3 3],64,"Name","conv_29","Padding","same")
+    reluLayer("Name","relu_29")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_14");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_30","Padding","same")
+    reluLayer("Name","relu_30")
+    convolution2dLayer([3 3],64,"Name","conv_31","Padding","same")
+    reluLayer("Name","relu_31")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_15");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_32","Padding","same")
+    reluLayer("Name","relu_32")
+    convolution2dLayer([3 3],64,"Name","conv_33","Padding","same")
+    reluLayer("Name","relu_33")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_16");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_34","Padding","same")
+    reluLayer("Name","relu_34")
+    convolution2dLayer([3 3],64,"Name","conv_35","Padding","same")
+    reluLayer("Name","relu_35")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = additionLayer(2,"Name","addition_17");
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    convolution2dLayer([3 3],64,"Name","conv_36","Padding","same")
+    reluLayer("Name","relu_36")
+    convolution2dLayer([3 3],64,"Name","conv_37","Padding","same")
+    reluLayer("Name","relu_37")];
+lgraph = addLayers(lgraph,tempLayers);
+
+tempLayers = [
+    additionLayer(2,"Name","addition_18")
+    convolution2dLayer([3 3],1,"Name","conv_38","Padding","same")
+    regressionLayer("Name","regressionoutput")];
+lgraph = addLayers(lgraph,tempLayers);
+
+% clean up helper variable
+clear tempLayers;
+
+
+
+#connect layer branches
+lgraph = connectLayers(lgraph,"relu_1","conv_2");
+lgraph = connectLayers(lgraph,"relu_1","addition_1/in2");
+lgraph = connectLayers(lgraph,"relu_3","addition_1/in1");
+lgraph = connectLayers(lgraph,"addition_1","conv_4");
+lgraph = connectLayers(lgraph,"addition_1","addition_2/in2");
+lgraph = connectLayers(lgraph,"relu_5","addition_2/in1");
+lgraph = connectLayers(lgraph,"addition_2","conv_6");
+lgraph = connectLayers(lgraph,"addition_2","addition_3/in2");
+lgraph = connectLayers(lgraph,"relu_7","addition_3/in1");
+lgraph = connectLayers(lgraph,"addition_3","conv_8");
+lgraph = connectLayers(lgraph,"addition_3","addition_4/in2");
+lgraph = connectLayers(lgraph,"relu_9","addition_4/in1");
+lgraph = connectLayers(lgraph,"addition_4","conv_10");
+lgraph = connectLayers(lgraph,"addition_4","addition_5/in2");
+lgraph = connectLayers(lgraph,"relu_11","addition_5/in1");
+lgraph = connectLayers(lgraph,"addition_5","conv_12");
+lgraph = connectLayers(lgraph,"addition_5","addition_6/in2");
+lgraph = connectLayers(lgraph,"relu_13","addition_6/in1");
+lgraph = connectLayers(lgraph,"addition_6","conv_14");
+lgraph = connectLayers(lgraph,"addition_6","addition_7/in2");
+lgraph = connectLayers(lgraph,"relu_15","addition_7/in1");
+lgraph = connectLayers(lgraph,"addition_7","conv_16");
+lgraph = connectLayers(lgraph,"addition_7","addition_8/in2");
+lgraph = connectLayers(lgraph,"relu_17","addition_8/in1");
+lgraph = connectLayers(lgraph,"addition_8","conv_18");
+lgraph = connectLayers(lgraph,"addition_8","addition_9/in2");
+lgraph = connectLayers(lgraph,"relu_19","addition_9/in1");
+lgraph = connectLayers(lgraph,"addition_9","conv_20");
+lgraph = connectLayers(lgraph,"addition_9","addition_10/in2");
+lgraph = connectLayers(lgraph,"relu_21","addition_10/in1");
+lgraph = connectLayers(lgraph,"addition_10","conv_22");
+lgraph = connectLayers(lgraph,"addition_10","addition_11/in2");
+lgraph = connectLayers(lgraph,"relu_23","addition_11/in1");
+lgraph = connectLayers(lgraph,"addition_11","conv_24");
+lgraph = connectLayers(lgraph,"addition_11","addition_12/in2");
+lgraph = connectLayers(lgraph,"relu_25","addition_12/in1");
+lgraph = connectLayers(lgraph,"addition_12","conv_26");
+lgraph = connectLayers(lgraph,"addition_12","addition_13/in2");
+lgraph = connectLayers(lgraph,"relu_27","addition_13/in1");
+lgraph = connectLayers(lgraph,"addition_13","conv_28");
+lgraph = connectLayers(lgraph,"addition_13","addition_14/in2");
+lgraph = connectLayers(lgraph,"relu_29","addition_14/in1");
+lgraph = connectLayers(lgraph,"addition_14","conv_30");
+lgraph = connectLayers(lgraph,"addition_14","addition_15/in2");
+lgraph = connectLayers(lgraph,"relu_31","addition_15/in1");
+lgraph = connectLayers(lgraph,"addition_15","conv_32");
+lgraph = connectLayers(lgraph,"addition_15","addition_16/in2");
+lgraph = connectLayers(lgraph,"relu_33","addition_16/in1");
+lgraph = connectLayers(lgraph,"addition_16","conv_34");
+lgraph = connectLayers(lgraph,"addition_16","addition_17/in2");
+lgraph = connectLayers(lgraph,"relu_35","addition_17/in1");
+lgraph = connectLayers(lgraph,"addition_17","conv_36");
+lgraph = connectLayers(lgraph,"addition_17","addition_18/in2");
+lgraph = connectLayers(lgraph,"relu_37","addition_18/in1");
+
+
+
+
+
+#plot layers
+
+plot(lgraph);
+imds = imageDatastore('C:\Users\Mahita\Documents\MATLAB\medianfilter\denoise_cnn\set12','IncludeSubfolders',true, 'LabelSource','foldernames');
+
+    
+      ds = denoisingImageDatastore(imds,...sacdted
+        'PatchesPerImage', 512,...
+        'PatchSize', 50,...
+        'GaussianNoiseLevel', 0.50,...
+        'ChannelFormat', 'grayscale');
+    opts=trainingOptions('adam','InitialLearnRate',0.001, 'Plots', 'training-progress', ...
+            'LearnRateSchedule', 'piecewise', ...
+            'LearnRateDropFactor', 1, ...
+            'LearnRateDropPeriod', 10,  'MaxEpochs',30,'MiniBatchSize',64);
+denoise23=trainNetwork(ds,lgraph,opts);
+save denoise23
